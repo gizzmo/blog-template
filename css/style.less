@@ -1,0 +1,88 @@
+/* i want the top bar to stay up top */
+.navbar-fixed-top {
+	position: relative;
+}
+
+/* site footer */
+.container > footer p {
+	margin: 40px 0 20px 0;
+	text-align: center;
+}
+
+
+/* articles */
+#content article {
+	margin-bottom:30px;
+
+	header {
+		padding-bottom: 1px;
+		margin: 5px 0;
+		border-bottom: 1px solid #eeeeee;
+
+	}
+
+	footer {
+		border-top: 1px solid #eeeeee;
+	}
+}
+
+/* side panel stuff */
+#latest-tweet {
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	p.tweet {
+		background-color: #e6e6e6;
+		padding: 10px 13px;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+
+			width: 0;
+			height: 0;
+
+			border-top: 10px solid #e6e6e6;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+
+			margin-top:10px;
+			margin-left:6px;
+
+		}
+	}
+
+
+
+	#avatar {
+		margin: 15px 0 0 15px;
+
+		img {
+			display:inline;
+			float:left;
+			margin-top:2px;
+		}
+
+		.metadata {
+			display:inline;
+			float:left;
+			margin-left:12px;
+
+			.username {
+
+			}
+
+			.timestamp {
+				font-style:italic;
+				font-size:.75em;
+				color:#999;
+			}
+		}
+
+	}
+}
