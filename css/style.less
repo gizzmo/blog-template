@@ -1,32 +1,46 @@
-/* i want the top bar to stay up top */
+// Selection styling
+::selection,
+::-moz-selection {
+	color:#FFF;
+	background:#FF3BB4;
+}
+
+// i want the top bar to stay up top
 .navbar-fixed-top {
 	position: relative;
 }
 
-/* site footer */
+// site footer
 .container > footer p {
 	margin: 40px 0 20px 0;
 	text-align: center;
 }
 
-
-/* articles */
-#content article {
+// articles
+#content > article {
 	margin-bottom:30px;
 
-	header {
+	> header {
 		padding-bottom: 1px;
 		margin: 5px 0;
 		border-bottom: 1px solid #eeeeee;
 
+		h1 a {
+			color: #222;
+		}
+
+		h1 a:hover {
+			text-decoration: none;
+		}
 	}
 
-	footer {
+	> footer {
 		border-top: 1px solid #eeeeee;
 	}
 }
 
-/* side panel stuff */
+
+// side panel stuff
 #latest-tweet {
 
 	&:after {
