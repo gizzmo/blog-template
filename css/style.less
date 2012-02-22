@@ -1,6 +1,6 @@
 // Variables
 @the_pink: hsl(333, 100%, 67%);
-@base_grey: hsl(0, 0%, 95%);
+@base_grey: hsl(0, 0%, 93%);
 
 // Selection styling
 ::selection,
@@ -140,7 +140,7 @@ section#comments {
 		// Comment Meta stuff
 		img.avatar {
 			padding: 3px;
-			border: 1px solid darken(@base_grey, 14);
+			border: 1px solid darken(@base_grey, 15);
 			background-color: @base_grey;
 			margin-left: -63px;
 			float:left;
@@ -160,7 +160,7 @@ section#comments {
 		// mouse hover
 		&:hover {
 			border-top-color: darken(@base_grey, 10);
-			background-color: lighten(@base_grey, 4);
+			background-color: lighten(@base_grey, 5);
 			span.comment-number a {
 				text-decoration: none;
 				color: darken(@base_grey, 10);
@@ -171,30 +171,23 @@ section#comments {
 		&.highlighted {
 			@base_pink: lighten(@the_pink, 30);
 
-			border-top-color: darken(@base_pink, 15);
-			background-color: lighten(@base_pink, 0);
+			border-top-color: darken(@base_pink, 10);
+			background-color: darken(@base_pink, -1);
 
 			span.comment-number a {
-				color: darken(@base_pink, 15);
+				color: darken(@base_pink, 10);
 			}
 
 			// highlighted and hovered
 			&:hover {
-				border-top-color: darken(@base_pink, 15);
-				background-color: darken(@base_pink, 2);
+				border-top-color: darken(@base_pink, 20);
+				background-color: darken(@base_pink, 0);
 				span.comment-number a {
 					color: darken(@base_pink, 20);
 				}
 			}
-
-
 		}
 
-
-		// The content
-		.content {
-
-		}
 
 
 	}
@@ -211,6 +204,10 @@ section#comments {
 		li a {
 			padding: 4px 15px;
 			border-bottom: 1px solid #F1F3F6;
+
+			&:hover {
+
+			}
 		}
 
 		li {
