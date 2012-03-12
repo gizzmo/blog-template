@@ -125,6 +125,15 @@ section#comments {
 		}
 	}
 
+	#commentlist {
+		margin: 0px;
+
+		&, ul, ol {
+			list-style: none;
+		}
+	}
+
+
 	article.comment {
 
 		border-top: 1px solid @base_grey;
@@ -190,6 +199,18 @@ section#comments {
 				background-color: darken(@base_pink, 0);
 				span.comment-number a {
 					color: darken(@base_pink, 20);
+				}
+			}
+		}
+
+		footer {
+			border: none;
+
+			p {
+				text-align: right;
+
+				span:before{
+					 margin: 0 5px;
 				}
 			}
 		}
