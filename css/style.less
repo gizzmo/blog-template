@@ -125,15 +125,22 @@ section#comments {
 		}
 	}
 
+
+	// Style the design of the threaded
 	#commentlist {
 		margin: 0px;
 
 		&, ul, ol {
 			list-style: none;
 		}
+
+		p.pingback {
+
+		}
 	}
 
 
+	// Style the design of the article its self
 	article.comment {
 
 		border-top: 1px solid @base_grey;
@@ -141,6 +148,7 @@ section#comments {
 
 		padding: 10px;
 		padding-left: 70px;
+		padding-bottom: 5px;
 
 		header {
 			border: none;
@@ -209,13 +217,13 @@ section#comments {
 			p {
 				text-align: right;
 
+				margin: 0px;
+
 				span:before{
 					 margin: 0 5px;
 				}
 			}
 		}
-
-
 
 	}
 }
