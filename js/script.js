@@ -1,5 +1,5 @@
 // Anon wrapper
-(function($){
+(function(){
 
 	// Jquery ready
 	$(function(){
@@ -37,4 +37,4 @@
 	});
 
 
-}(window.jQuery))
+}());
