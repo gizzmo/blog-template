@@ -22,8 +22,19 @@
 		});
 
 
-	});
+		// Latest Tweet
+		$.getJSON('http://api.twitter.com/1/statuses/user_timeline.json?callback=?&count=1&trim_user=1&screen_name=justgiz', function(data){
+			// Twitter text the tweet
+			var _the_tweet = twttr.txt.autoLink(data[0].text, {
+				usernameIncludeSymbol: true
+			});
 
+			// Load the tweet into the box
+			$('#latest-tweet .tweet').html(_the_tweet);
+		});
+
+
+	});
 
 
 }(window.jQuery))
