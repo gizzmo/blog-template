@@ -22,24 +22,24 @@
 		});
 
 
-		// Latest Tweet
-		$.getJSON('http://api.twitter.com/1/statuses/user_timeline.json?callback=?&count=1&trim_user=1&screen_name=justgiz', function(data)
-		{
-			// Twitter text the tweet
-			var _the_tweet = twttr.txt.autoLink(data[0].text, {
-				usernameIncludeSymbol: true
-			}),
+		// // Latest Tweet
+		// $.getJSON('http://api.twitter.com/1/statuses/user_timeline.json?callback=?&count=1&trim_user=1&screen_name=justgiz', function(data)
+		// {
+		// 	// Twitter text the tweet
+		// 	var _the_tweet = twttr.txt.autoLink(data[0].text, {
+		// 		usernameIncludeSymbol: true
+		// 	}),
 
-			// Get the relative time stamp
-			_the_date = relative_time(data[0].created_at);
+		// 	// Get the relative time stamp
+		// 	_the_date = relative_time(data[0].created_at);
 
 
-			// Load the tweet into the box
-			$('#latest-tweet .tweet').html(_the_tweet);
+		// 	// Load the tweet into the box
+		// 	$('#latest-tweet .tweet').html(_the_tweet);
 
-			// Update the time
-			$('#latest-tweet .timestamp').html(_the_date);
-		});
+		// 	// Update the time
+		// 	$('#latest-tweet .timestamp').html(_the_date);
+		// });
 
 
 	});

@@ -19,21 +19,64 @@ img::-moz-selection {
 	margin: 0 8px;
 }
 
+.container {
+	max-width: 970px;
+}
+
 
 
 /* Site Header (#header)
 ================================================== */
-.page-header a {
-	color: #333;
+header#header {
 
-	&:hover	{
-		text-decoration: none;
+	/* Swap padding and margins for proper display in narrow viewports */
+	.navbar {
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* dont display on small viewports */
+	h1 {
+		display:none;
+
+		a {
+			color: #333;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 
-.chrome-frame {
-	margin-top: 10px;
+
+@media (min-width: 768px) {
+
+	/* Navbar repositioning foo */
+	header#header {
+		.navbar {
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+
+			/* The navbar becomes detached from the top, so we round the corners */
+			border-radius: 4px;
+		}
+
+		/* Dont need to display this */
+		.navbar-brand {
+			display: none;
+		}
+
+		h1 {
+			display:block;
+			margin: 30px 0 20px;
+		}
+	}
 }
+
 
 /* Main Content (#content)
 ================================================== */
