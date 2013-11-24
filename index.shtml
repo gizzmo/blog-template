@@ -1,7 +1,7 @@
 <!--#include file='includes/header.html' -->
 
 		<div class='row'>
-			<div id='content' class='col-md-9'>
+			<div id='content' class='col-sm-12 col-md-9'>
 
 				<article id='post-1'>
 					<header>
