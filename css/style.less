@@ -199,63 +199,6 @@ article {
 	}
 }
 
-// latest tweet
-#latest-tweet {
-
-	&:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
-
-	p.tweet {
-		@color: #e6e6e6;
-
-		background-color: @color;
-		padding: 10px 13px;
-		position: relative;
-		border-radius: 5px;
-
-		&:after {
-			content: "";
-			position: absolute;
-
-			top: 100%;
-			left: 20px;
-
-			border: 10px solid transparent;
-			border-top-color: @color;
-		}
-	}
-
-	.avatar {
-		margin: 15px 0 0 15px;
-
-		img {
-			display:inline;
-			float:left;
-			margin-top:2px;
-		}
-
-		.metadata {
-			display:inline;
-			float:left;
-			margin-left:12px;
-
-			.username {
-
-			}
-
-			.timestamp {
-				font-style:italic;
-				font-size:.75em;
-				color:#999;
-			}
-		}
-
-	}
-}
-
 
 /* Site Footer
 ================================================== */
